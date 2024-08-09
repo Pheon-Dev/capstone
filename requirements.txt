@@ -1,0 +1,27 @@
+
+# Basic libraries
+pandas
+numpy
+
+# Machine learning libraries
+scikit-learn
+joblib
+catboost
+
+# Natural Language Processing (NLP)
+nltk
+spacy
+transformers
+textblob
+
+# Data visualization libraries
+matplotlib
+seaborn
+
+# Streamlit for web app deployment
+streamlit
+
+# Additional utilities
+scipy
+fuzzywuzzy
+PyPDF2
