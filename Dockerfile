@@ -13,7 +13,15 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://github.com/Pheon-Dev/capstone.git .
 
-RUN pip3 install -r requirements.txt
+RUN python3 -m venv .venv
+
+RUN . .venv/bin/activate
+
+RUN pip install --upgrade pip
+
+COPY requirements.txt /tmp/requirements.txt
+
+RUN python3 -m pip install -r /tmp/requirements.txt
 
 EXPOSE 8501
 
